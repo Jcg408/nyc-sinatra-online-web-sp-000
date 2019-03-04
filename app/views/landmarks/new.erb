@@ -9,11 +9,10 @@
       
       <label>Figures:</label><br>
       <% @figures.each do |figure| %>
-
         <input type="radio" name="landmark[figure_id]" value="<%= figure.id %>"> <%= figure.name %><br>
-        <br>
       <%end%>
-      <br><br>
+      <br>
+      
       <input type="submit" value="Create New Landmark">
     </form>
 <a class="button" href="/figures">Figures</a>
