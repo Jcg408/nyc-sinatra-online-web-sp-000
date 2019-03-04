@@ -9,7 +9,7 @@
       
       <label>Figures:</label><br>
       <% @figures.each do |figure| %>
-        <input type="radio" name="landmark[figure_id]" value="<%= figure.id %>"> <%= figure.name %><br>
+        <input type="checkbox" name="landmark[figure_id]" value="<%= figure.id %>"> <%= figure.name %><br>
       <%end%>
       <br>
       
