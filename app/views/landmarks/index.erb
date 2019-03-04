@@ -1,15 +1,15 @@
-<h1>All Landarks</h1>
+<h1>All Landmarks</h1>
     <% @landmarks.each do |landmark| %>
     <ul>
       <li>
-        <h3><%= landmark.name %></h3>
-        <h2><%= landmark.year_completed %></h2>
+        <h3>Name: <%= landmark.name %></h3>
+        <h2>Year: <%= landmark.year_completed %></h2>
       </li>
       
-     
-      <% if landmark.figure %>
-      <li><%= landmark.figure.name%></li>
-      <% end %>
+      <!--<h2>Landmark Figure:</h2>-->
+      <!--<% if landmark.figure %>-->
+      <!--<li><%= landmark.figure.name%></li>-->
+      <!--<% end %>-->
       <div><a href="/landmarks/<%=landmark.id%>/edit">Edit</a></div>
     </ul>
     <% end %>
