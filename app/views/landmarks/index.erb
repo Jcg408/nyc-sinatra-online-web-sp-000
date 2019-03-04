@@ -2,7 +2,7 @@
     <% @landmarks.each do |landmark| %>
     <ul>
       <h3><%= landmark.name %></h3>
-      <li><%= landmark.year_completed %></li>
+     <h2><%= landmark.year_completed %></h2>
       <% if landmark.figure %>
       <li><%= landmark.figure.name%></li>
       <% end %>
