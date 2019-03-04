@@ -12,7 +12,7 @@
         <input type="checkbox" name="landmark[figure_id]" value="<%= figure.id %>" <%= 'checked' if @landmark.figure == figure%>/>
         <%= figure.name %>
       <%end%>
-      <br><br>
+      <br>
       <input type="hidden" name="_method" value="patch">
       <input type="submit" value="Edit Landmark">
     </form>
