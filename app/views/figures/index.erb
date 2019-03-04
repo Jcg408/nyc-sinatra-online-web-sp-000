@@ -1,15 +1,16 @@
 <h1>All Figures</h1>
     <% @figures.each do |figure| %>
     <ul>
-      <h3><a href="/figures/<%=figure.id%>"><%= figure.name %></a></h3>
-      <ul><strong>Titles</strong>
+      <h2><a href="/figures/<%=figure.id%>"><%= figure.name %></a></h2>
+      
+      <label>Titles:</label>
       <br>
       <% figure.titles.each do |title| %>
         <li><%= title.name %></li>
         <% end %>
-      </ul>
-      <br><br>
-      <ul><strong>Landmarks</strong>
+     
+   
+      <label>Landmarks</label>
       <br>
       <% figure.landmarks.each do |landmark| %>
       <li><%= landmark.name %></li>
