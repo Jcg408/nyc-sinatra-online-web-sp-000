@@ -9,10 +9,8 @@
       
       <label>Landmark Figures:</label>
       <% @figures.each do |figure| %>
-
-      <input type="checkbox" name="landmark[figure_id]" value="<%= figure.id %>" <%= 'checked' if @landmark.figure == figure%>/>
+        <input type="checkbox" name="landmark[figure_id]" value="<%= figure.id %>" <%= 'checked' if @landmark.figure == figure%>/>
         <%= figure.name %>
-   
       <%end%>
       <br><br>
       <input type="hidden" name="_method" value="patch">
