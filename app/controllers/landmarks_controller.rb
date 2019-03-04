@@ -1,5 +1,11 @@
 class LandmarksController < ApplicationController
 
+  get '/landmarks' do
+    @landmarks = Landmark.all
+
+    erb :'landmarks/index'
+  end
+ 
   get '/landmarks/new' do
     @figures = Figure.all
 
@@ -12,11 +18,7 @@ class LandmarksController < ApplicationController
     redirect to "landmark/#{@landmark.id}"
   end
 
-  get '/landmarks' do
-    @landmarks = Landmark.all
-
-    erb :'landmarks/index'
-  end
+ 
 
   get '/landmarks/:id' do
     @landmark = Landmark.find(params[:id])
